@@ -1,0 +1,23 @@
+# my global config
+global:
+  interval: 15 # Set the interval to every 15 seconds. Default is every 1 minute.
+  gateway: 192.168.10.131:9091 # Set the gateway ip and port.
+
+
+target_configs:
+  - job: 'jobname'                                      # Job Name
+    static_configs:
+     - group: project01                                 # Group Name
+       targets:
+         - wss://websocket_project01_server_01:9508     # Websocket Server Host for Monitor
+         - wss://websocket_project01_server_02:9507     # Websocket Server Host for Monitor
+     - group: project02                                 # Group Name
+       targets:
+         - wss://websocket_project02_server_01:9508     # Websocket Server Host for Monitor
+         - wss://websocket_project02_server_02:9507     # Websocket Server Host for Monitor
+     - group: project03                                 # Group Name
+       targets:
+         - wss://websocket_project03_server_01:9508     # Websocket Server Host for Monitor
+         - wss://websocket_project03_server_02:9507     # Websocket Server Host for Monitor
+
+
