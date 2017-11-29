@@ -1,3 +1,12 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+# @Time       : 2017/11/29 15:42
+# @Author     : 周星星 Siman Chou
+# @Site       : https://github.com/simanchou
+# @File       : export_pgateway.py
+# @Description: monitor websocket by pushgateway of prometheus.Check the http status code, 101 is normal.
+
+
 import requests
 import websocket
 import six
